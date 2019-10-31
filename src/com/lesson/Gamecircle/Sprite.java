@@ -1,4 +1,4 @@
-package ru.gb.jtwo.lone.online.circles;
+package com.lesson.Gamecircle;
 
 import java.awt.*;
 
@@ -41,5 +41,4 @@ public class Sprite {
 
     void update(GameCanvas canvas, float deltaTime) {}
     void render(GameCanvas canvas, Graphics g) {}
-
 }

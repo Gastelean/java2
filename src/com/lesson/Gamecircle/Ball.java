@@ -1,4 +1,4 @@
-package ru.gb.jtwo.lone.online.circles;
+package com.lesson.Gamecircle;
 
 import java.awt.*;
 

@@ -1,13 +1,14 @@
-package ru.gb.jtwo.lone.online.circles;
+package com.lesson.Gamecircle;
+
 
 import javax.swing.*;
 import java.awt.*;
-// user input, update, render
-public class GameCanvas extends JPanel {
 
-    private final MainCircles gameController;
+public class GameCanvas extends JPanel {
+    private final Main gameController;
     private long lastFrameTime;
-    public GameCanvas(MainCircles gameController) {
+
+    public GameCanvas(Main gameController) {
         this.gameController = gameController;
         lastFrameTime = System.nanoTime();
     }
@@ -15,7 +16,6 @@ public class GameCanvas extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-
         long currentTime = System.nanoTime();
         float deltaTime = (currentTime - lastFrameTime) * 0.000000001f;
         lastFrameTime = currentTime;
@@ -28,8 +28,19 @@ public class GameCanvas extends JPanel {
         repaint();
     }
 
-    public int getLeft() { return 0; }
-    public int getRight() { return getWidth() - 1; }
-    public int getTop() { return 0; }
-    public int getBottom() { return getHeight() - 1; }
+    public int getLeft() {
+        return 0;
+    }
+
+    public int getRight() {
+        return getWidth() - 1;
+    }
+
+    public int getTop() {
+        return 0;
+    }
+
+    public int getBottom() {
+        return getHeight() - 1;
+    }
 }
