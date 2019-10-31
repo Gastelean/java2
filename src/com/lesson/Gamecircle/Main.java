@@ -80,7 +80,7 @@ public class Main extends JFrame {
         for (int i = 0; i < sprites.length; i++) {
             sprites[i].render(canvas, g);
         }
-        b.updateBG(canvas, 42);
+        b.updateBG(canvas, 43);
         addMouseListener(new MouseAdapter() {
         });
     }

@@ -21,7 +21,7 @@ public class GameCanvas extends JPanel {
         lastFrameTime = currentTime;
         gameController.onDrawFrame(this, g, deltaTime);
         try {
-            Thread.sleep(17);
+            Thread.sleep(18);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
