@@ -20,7 +20,7 @@ class BG {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            canvas.setBackground(Color.getHSBColor(40, 40, 40));
+            canvas.setBackground(Color.getHSBColor(41, 41, 41));
         }
 
     }
